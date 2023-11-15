@@ -1,8 +1,12 @@
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+
+import com.kms.katalon.core.configuration.RunConfiguration
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 import org.sikuli.script.Pattern as Pattern
 import org.sikuli.script.Screen as Screen
+
+
 
 WebUI.openBrowser('')
 
@@ -14,19 +18,19 @@ WebUI.delay(5)
 
 Screen s = new Screen()
 
-Pattern click3Button = new Pattern('C:\\Users\\mohit\\Katalon Studio\\katalon-sikuli-sample\\SikuliImages\\3Button.PNG')
+Pattern click3Button = new Pattern(RunConfiguration.getProjectDir()+ '\\SikuliImages\\3Button.PNG')
 
-Pattern click7Button = new Pattern('C:\\Users\\mohit\\Katalon Studio\\katalon-sikuli-sample\\SikuliImages\\7Button.PNG')
+Pattern click7Button = new Pattern(RunConfiguration.getProjectDir()+ '\\SikuliImages\\7Button.PNG')
 
-Pattern clickPlusButton = new Pattern('C:\\Users\\mohit\\Katalon Studio\\katalon-sikuli-sample\\SikuliImages\\plusButton.PNG')
+Pattern clickPlusButton = new Pattern(RunConfiguration.getProjectDir()+ '\\SikuliImages\\plusButton.PNG')
 
-Pattern click9Button = new Pattern('C:\\Users\\mohit\\Katalon Studio\\katalon-sikuli-sample\\SikuliImages\\9Button.PNG')
+Pattern click9Button = new Pattern(RunConfiguration.getProjectDir()+ '\\SikuliImages\\9Button.PNG')
 
-Pattern click1Button = new Pattern('C:\\Users\\mohit\\Katalon Studio\\katalon-sikuli-sample\\SikuliImages\\1Button.PNG')
+Pattern click1Button = new Pattern(RunConfiguration.getProjectDir()+ '\\SikuliImages\\1Button.PNG')
 
-Pattern clickequalButton = new Pattern('C:\\Users\\mohit\\Katalon Studio\\katalon-sikuli-sample\\SikuliImages\\equalButton.PNG')
+Pattern clickequalButton = new Pattern(RunConfiguration.getProjectDir()+ '\\SikuliImages\\equalButton.PNG')
 
-Pattern getresultButton = new Pattern('C:\\Users\\mohit\\Katalon Studio\\katalon-sikuli-sample\\SikuliImages\\resultButton.PNG')
+Pattern getresultButton = new Pattern(RunConfiguration.getProjectDir()+ '\\SikuliImages\\resultButton.PNG')
 
 
 s.wait(click3Button, 10)
