@@ -85,12 +85,10 @@ Configure the Katalon Studio project settings to include Sikuli in the classpath
 # Benefits of Sikuli and Katalon Integration:
 
 * Enhanced Test Coverage:
-
-Sikuli's image-based approach allows testing of elements that may be challenging for traditional automation tools.
+  Sikuli's image-based approach allows testing of elements that may be challenging for traditional automation tools.
 
 * Cross-platform Compatibility:
-
-Sikuli works seamlessly across different platforms, making it a versatile solution for web and desktop applications.
+  Sikuli works seamlessly across different platforms, making it a versatile solution for web and desktop applications.
 
 # Improved User Experience Testing:
 
